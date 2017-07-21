@@ -1,11 +1,11 @@
-FROM markliou/ssh-server
-
-MAINTAINER markliou <markliou@ms51.url.com.tw>
-
+FROM ubuntu:latest
+MAINTANE brandon850105@gmail.com
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		curl \
 		python-minimal \
-		wget
+		wget \
+		python3
+		
 	
 
 # install perl and gcc
@@ -21,6 +21,7 @@ RUN mkdir /opt/blast \
 # install perl module for update_blastdb.pl
 RUN cpan install 
 
+RUN mkdir /db /blast
 	  
 ENV PATH /opt/blast/bin:$PATH
 
