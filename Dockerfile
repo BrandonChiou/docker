@@ -3,8 +3,8 @@ MAINTANE brandon850105@gmail.com
 RUN apt-get update && apt-get install -y --no-install-recommends \
 		curl \
 		python-minimal \
-		wget \
-		python3
+		wget 
+		
 		
 	
 
